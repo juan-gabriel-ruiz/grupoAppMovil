@@ -1,0 +1,59 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>home Vuelo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+ <ion-button (click)="singOut()">
+  Salir
+ </ion-button>
+
+</ion-content> --> 
+<!-- SOLO USO APP HEADER -->
+
+<app-header title="Inicio"></app-header>
+<ion-content [fullscreen]="true">
+
+  <ion-button (click)="singOut()">
+   Salir
+  </ion-button>
+ 
+ </ion-content> 
+
+
+<!--  desplegable
+   <ion-content>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content> -->
+
+<ion-tabs>
+  <!-- Tab bar -->
+
+  <ion-tab-bar slot="bottom" class="tabss">
+
+    <ion-tab-button tab="schedule" routerLink="main/home">
+      <ion-icon name="calendar" aria-hidden="true"  ></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="speakers"routerLink="/main/ayuda">
+      <ion-icon name="person-circle" aria-hidden="true"></ion-icon>
+      <ion-label>Ayuda</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="map" routerLink="/main/profile">
+      <ion-icon name="map" aria-hidden="true"></ion-icon>
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+
+    
+  </ion-tab-bar>
+</ion-tabs>
